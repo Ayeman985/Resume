@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/porfolio5.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="top-header">
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <!-- <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDown()">	
+                    &#9776</a></li> -->
+                <li class="dropDownIcon"><a href="javascript:voi d(0)" onclick="dropDown()">&#9776</a></li> 
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Resume</a></li>
+                <li class="right"><a class="button" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="hide">
+            <h1>I am Ayeman Fatima</h1>
+            <p>Electronics Engineer | Technology Enthusiast | Coder </p>
+            <a href="./content-of-portfolio.html" class="button">Portfolio!</a>
+        </div>
+    </header>
+
+    <!-- ABOUT ME  -->
+    <section class="about">
+        <br>
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="matter">
+                <p>I am a Electronics and Communication Engineer , presently in my third year. I love to learn new things  <br>
+                    I have always been fascinated with technology.I love to code - python is my favourite programming language as it involves simple syntax and finds its 
+                    applications everywhere .I love reading books especially thrillers and I love to bake in my free time!
+                </p>
+
+                <a href="" class="button">Portfolio!</a>
+            </div>
+            <div class="vector-img">
+                <img src="./images/code3.png" alt="coder image">   
+            </div>
+            <div class="menu">
+                <div class="parts">
+                    <img src="./images/books2.png" width="100" height="100" alt="Academics">
+                    <p class="sub-heading">Academics</p>
+                    <p class="content">Go through my academic performance and my achievements through the years..</p>
+                    <a href="" class="link">See More</a>
+                </div>
+                <div class="parts">
+                    <img src="./images/certifcates2.png" width="100" height="100" alt="Cerifications ">
+                    <p class="sub-heading">Certifications</p>
+                    <p class="content">You can scrutinize my certifications from MOOCs Learning plateforms i.e (Coursera, Udemy , EDx)</p>
+                    <a href="" class="link">See More</a>
+                </div>
+                <div class="parts">
+                    <img src="./images/project4.png" width="100" height="100" alt="Projects">
+                    <p class="sub-heading">Projects</p>
+                    <p class="content">Projects which have worked on and completed over the span of 2 years .</p>
+                </div>
+                <div class="parts">
+                    <img src="./images/sports.png" width="100" height="100" alt="Extra-curricular activities">
+                    <p class="sub-heading">Extra-curricular </p>
+                    <p class="content">Extra-curricular activities in which I have participated from sports to public speaking events !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why me section -->
+    
+    <section class="why-me">
+        <hr> 
+        <br>
+        <h2>Why me ??</h2>
+        <div class="why-container">
+            <div class="vector-art">
+                <img src="./images/work.png" alt="female Developer">
+            </div>
+            <div class="why-me-matter">
+                <p> 
+                    Why should it be me? 
+                    Even though I am from the electronics background I have always had inclination towards the field of Computer Science.
+                    I have learnt Python by myself and found it be one of the best programming languages .I have done several projects based
+                    on Python and have also conducted a workshop on Python for students !
+                    <br>
+                    Here are the links to my projects.
+                </p>
+                <a class="button" href="#">Github</a>
+                <a class="button" href="./projects.html">EC Projects</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <!-- CONTACT ME -->
+    <section class="contact-me" id="contact">
+        <br>
+        <h2>Contact Me!</h2>
+        <div class="contact-container">
+            <div class="contact-img">
+                <img src="./images/contact-me.png" alt="Contact Details">
+            </div>
+            <div class="contact-details">
+                <h3>Lets Get in touch</h3>
+                <ul>
+                    <li>Email : ayemanfatima985@gmail.com</li>
+                    <li>Phone : +91 8500635387</li>
+                    <li>Github : Ayeman Fatima</li>
+                </ul>
+                <a style="width: 150px;text-align: center;" href="tel:8500635387" class="button-2">Call</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function dropDown() {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                console.log("Navbar is Open");
+            }
+            else{
+                x.className = "topnav";
+                console.log("Navbar is Closed");
+            }
+        }
+    </script>
+
+</body>
+</html>
